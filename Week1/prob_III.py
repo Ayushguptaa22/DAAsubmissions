@@ -23,15 +23,15 @@ while(t>0):
     lo=0
     mid=(h+lo)//2
     key=int(input())
-    # for i in range(len(l)):
-    comp+=1
     if l[mid]==key:
+        comp+=1
         print("Present",comp)
         k=1
         break
     elif l[mid]<key:
         lo=mid+1
         for j in range(lo,le):
+            comp+=1
             if l[j]==key:
                 print("Present",comp)
                 k=1
@@ -39,6 +39,7 @@ while(t>0):
     elif l[mid]>key:
         h=mid-1
         for j in range(lo,h):
+            comp+=1
             if l[j]==key:
                 print("Present",comp)
                 k=1
